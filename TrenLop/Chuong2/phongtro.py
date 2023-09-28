@@ -1,0 +1,30 @@
+
+# bóc tách dữ liệu trên web nhatro123.com. Nội dung cần lấy: tiêu đề, đơn giá, diện tích,
+# nơi cho thuê, ngày đăng. Ghi nội dung vào file NhaTro123.txt.
+# re: bóc tách
+# os: lưu file
+# requets để.. thẻ html về
+# import re
+# import os
+# import requests
+
+# url="https://phongtro123.com/tinh-thanh/da-nang/"
+# html = requests.get(url).text
+
+# TieuDe=re.findall('<h3 class="post-title"><a.*?">(.*?)</a></h3>', html)
+# DonGia=re.findall('<span class="post-price">(.*?)</span>', html)
+# DienTich=re.findall('<span class="post-acreage">(.*?)</span>', html)
+# DiaChi=re.findall('<span class="post-location"><a.*?">(.*?)</a></span>', html)
+# NgayDang=re.findall('<time class="post-time" title=.*?">(.*?)</time>', html)
+
+# str=""
+# for i in range(len(TieuDe)):
+#     str+=TieuDe[i] + "\n"
+#     str+="- " + DonGia[i] + "\n"    
+#     str+="- " + DienTich[i] + "\n"
+#     str+="- " + DiaChi[i] + "\n"
+#     str+="- " + NgayDang[i] + "\n"
+    
+# filename=os.path.join("D:/KPW", "PhongTro123.txt")    
+# with open(filename, 'w',encoding='utf-8') as f:
+#     f.write(str)
